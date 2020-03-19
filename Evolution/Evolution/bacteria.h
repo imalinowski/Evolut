@@ -9,36 +9,45 @@ using namespace sf;
 
 class Bacteria {
 public:
-	float angle = 45;
+	float angle = 0;
 
 	Bacteria(float x, float y) {
 
 		t.loadFromFile("bacteria.png");
 		s.setTexture(t);
 
-		s.setOrigin(size / 2, size / 2);
+		s.setOrigin(s.getGlobalBounds().width / 2, s.getGlobalBounds().height / 2);
+		s.setScale(size / s.getGlobalBounds().width, size / s.getGlobalBounds().height);
 		s.setPosition(x, y);
-		s.setScale(size/s.getTexture()->getSize().x, size/ s.getTexture()->getSize().y);
 		s.setRotation(angle);
 		
+		
+		std::cout << "width " << s.getGlobalBounds().width << std::endl;
+		std::cout << "height " << s.getGlobalBounds().height << std::endl;
 
 		this->x = x;
 		this->y = y;
 	}
 	Sprite& draw() {
-		s.setPosition(x-size/2, y-size/2);
+
+		//s.setPosition(x, y);
 		s.setRotation(angle);
+		s.setPosition(x, y);
+
 		return s;
 	}
 	void setPos(float x, float y) {
 		this->x = x;
 		this->y = y;
-		s.setPosition(x-size/2, y-size/2);
+		//s.setPosition(x, y);
 	}
 	void move() {
 		x += cos(PI/180*angle) *speed;
 		y += sin(PI/180*angle) *speed;
-		s.setPosition(x-size/2, y-size/2);
+
+		//std::cout << "x " << x << " " << s.getPosition().x << "   ";
+		//std::cout << "y " << y << " " << s.getPosition().y << std::endl;
+		//s.setPosition(x, y);
 	}
 private:
 

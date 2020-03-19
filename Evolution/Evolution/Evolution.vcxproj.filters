@@ -18,9 +18,14 @@
     <ClCompile Include="main.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="bacteria.h">
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="header.h">
       <Filter>Файлы заголовков</Filter>
-    </ClCompile>
+    </ClInclude>
+    <ClInclude Include="bacteria.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="bacteria.png">
