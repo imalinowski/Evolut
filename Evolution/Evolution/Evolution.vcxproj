@@ -18,6 +18,21 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="headers\bacteria.h" />
+    <ClInclude Include="headers\food.h" />
+    <ClInclude Include="headers\text.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Res\bacteria-g.png" />
+    <Image Include="Res\bacteria-r.png" />
+    <Image Include="Res\bacteria-y.png" />
+    <Image Include="Res\bacteria.png" />
+    <Image Include="Res\food.png" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{28A6F29D-5BE5-489F-BBD5-7061CD48D1AA}</ProjectGuid>
@@ -87,7 +102,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\ilnic\Downloads\SFML-2.5.1\include;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\ilnic\Downloads\SFML-2.5.1\include;C:\Users\ilnic\source\repos\Evolut\Evolution\Evolution\headers</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -125,16 +140,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="main.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="bacteria.h" />
-    <ClInclude Include="header.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="bacteria.png" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

@@ -15,20 +15,35 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="source\main.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="header.h">
+    <ClInclude Include="headers\bacteria.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="bacteria.h">
+    <ClInclude Include="headers\food.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\text.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="bacteria.png">
+    <Image Include="Res\bacteria.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="Res\food.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="Res\bacteria-g.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="Res\bacteria-r.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="Res\bacteria-y.png">
       <Filter>Файлы ресурсов</Filter>
     </Image>
   </ItemGroup>
